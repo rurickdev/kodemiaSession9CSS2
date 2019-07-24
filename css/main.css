@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.squares-wrapper {
+    border:2px solid purple;
+    width:1000px;
+    padding:10px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.squares-wrapper:nth-of-type(4) {
+    border-color: green;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.red.square{
+    background: red;
+}
+
+.blue.square{
+    background: navy;
+}
+
+.peru.square{
+    background: peru;
+}
+
+.squares-wrapper:first-of-type .blue.square{
+    margin-left: calc(50% - 231px);
+    margin-right: calc(50% - 231px);
+}
+
+.squares-wrapper:nth-of-type(2) .red.square{
+    margin-left: calc(25% - 116px);
+    margin-right: calc(25% - 116px);
+}
+
+.squares-wrapper:nth-of-type(2) .peru.square{
+    margin-left: calc(25% - 116px);
+    margin-right: calc(25% - 116px);
+}
+
+.squares-wrapper:nth-of-type(3) .red.square{
+    margin-right: calc(50% - 232px);
+}
+
+.squares-wrapper:nth-of-type(3) .blue.square{
+    margin-right: calc(25% - 116px);
+}
+
+.squares-wrapper:nth-of-type(3) .peru.square {
+    margin-right: calc(25% - 116px);
+}
